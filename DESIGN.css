@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img
+{
+    max-width: 100%;
+}
+body {
+font-size: 14px;
+background-color: hsl(30, 38%, 92%);
+font-family: "Montserrat";
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: calc(100vh - 0.1px);
+margin: 0 1.5rem;
+}
+.container{
+    max-width: 600px;
+}
+.attribution {
+    margin: 3rem;
+    font-size: 11px;
+    text-align: center;
+}
+p{ 
+    margin-top: 1rem;
+    color:hsl(228, 12%, 48%);
+    line-height: 1.8rem;
+}
+
+h2{
+    padding-top: 1rem;
+    letter-spacing: .3rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-family: "Montserrat";
+    font-weight: 500;
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+}
+h1{
+    font-family: "Fraunces";
+    font-weight: 500;
+    color: hsl(212, 21%, 14%);
+    font-size: 2rem;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.container ul li:last-child{
+    font-family: "Monteserrat";
+    color: hsl(228, 12%, 48%);;
+}
+.price
+{
+    margin-right: 1rem;
+    font-family: "Fraunces";
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%);
+}
+.container article:last-child{
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0 0 .8rem .8rem;
+}
+.container article :nth-child(1) img{
+    border-radius: .8rem .8rem 0 0;
+}
+button, li{
+    font-family: inherit;
+}
+.container article :nth-child(1) img{
+    margin-bottom: -1rem;
+}
+.btn{
+    font-family: inherit;
+    font-weight: 700;
+    display: felx;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: hsl(158, 36%, 37%);
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    transition: 0.4s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn:hover{
+    background-color: hsl(159, 36%, 23%);;
+}
+.container .btn img{
+    margin-right: 10px;
+}
+@media (min-width:640px)
+{
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .container article:last-child{
+        border-radius: 0 0.7rem 0.7rem 0;
+    }
+    .container article:nth-child(1) img{
+        border-radius: .7rem 0 0 .7rem ;
+        height: 100%;
+    }
+}
